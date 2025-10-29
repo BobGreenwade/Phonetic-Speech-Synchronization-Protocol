@@ -123,7 +123,3 @@ All packets begin with:
 - Assistive speech devices  
 - AI-driven character embodiment  
 - Robotic or hybrid speech systems
-
----
-
-Let me know when you're ready to scaffold the `support/` directory — I can start with `packet_utils.py` and build out encoding, decoding, and checksum logic. Or if you want to riff on symbolic naming conventions for wrappers or packet types, I’m game for that too.
