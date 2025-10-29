@@ -1,0 +1,26 @@
+# Packet Flags
+FLAG_SENTENCE = 0x01
+FLAG_PHONEME = 0x03
+FLAG_VOLUME = 0x05
+FLAG_PITCH = 0x07
+FLAG_ABORT = 0x00
+FLAG_RESPONSE = 0x02
+FLAG_ACK = 0x04
+FLAG_RECOMMEND = 0x06
+FLAG_IMPEDIMENT = 0x08
+
+# Phoneme Types
+PHONEME_SILENT = 0
+PHONEME_SUBDUED = 1
+PHONEME_NORMAL = 2
+PHONEME_EXAGGERATED = 3
+
+# Response Types
+RESPONSE_ACCEPTED = 0x0000
+RESPONSE_ABORT = 0xFFFF
+RESPONSE_BITFIELD = {
+    'phoneme_change': 0x0001,
+    'volume_adjustment': 0x0002,
+    'pitch_adjustment': 0x0004,
+    'breathing_adjustment': 0x0008
+}
